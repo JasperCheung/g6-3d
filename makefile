@@ -3,6 +3,8 @@ CFLAGS= -Wall
 LDFLAGS= -lm
 CC= gcc
 
+yes: all
+	./main script
 all: $(OBJECTS)
 	$(CC) -o main $(OBJECTS) $(LDFLAGS)
 
